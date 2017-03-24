@@ -19,7 +19,7 @@ perl -p -i -e 's/###([^#]+)###/defined $ENV{$1} ? $ENV{$1} : $&/eg' < "/template
 # on docker compose
 SLEEP_TIME=2
 
-declare -a DEPENDENCIES=( "kibana:5601" "jenkins:8080" "sonar:9000" "sensu-uchiwa:3000" "nexus:8081" "$GIT_URL")
+declare -a DEPENDENCIES=( "jenkins:8080" )
 
 for d in ${DEPENDENCIES[@]}; do 
   echo "waiting for $d to be available";
