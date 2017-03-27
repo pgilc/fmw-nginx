@@ -2,7 +2,7 @@
 set -e
 
 # Configure Git repository connection choice between Gerrit and Gitlab
-source /resources/scripts/git_repo_connection.sh
+#source /resources/scripts/git_repo_connection.sh
 
 cp -R /resources/configuration/* /etc/nginx/
 cp -R /resources/release_note/* /usr/share/nginx/html/
